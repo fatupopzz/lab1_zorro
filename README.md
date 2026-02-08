@@ -9,24 +9,3 @@ Un juego interactivo de "elige tu propia aventura" siguiendo el viaje de un zorr
 - `imagenes/` - Todas las imágenes usadas en el juego
 
 
-## Cómo ejecutar el juego
-
-### Localmente
-Abre `inicio/index.html` en tu navegador
-
-### Con NGINX
-1. Copia los archivos al directorio de NGINX:
-```bash
-   sudo cp -r * /var/www/html/odisea-del-zorro/
-```
-
-2. Establece los permisos:
-```bash
-   sudo chmod -R 755 /var/www/html/odisea-del-zorro
-```
-
-3. Accede desde el navegador:
-```
-   http://localhost/odisea-del-zorro/inicio/
-```
-
