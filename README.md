@@ -32,6 +32,10 @@ You are a fox born sick and alone in a desolate forest. At the brink of death, y
 └── imagenes/               # All game images
 ```
 
+## Video of functionality
+
+[Texto del enlace](https://youtu.be/xOCQ-COYlhc)
+
 ## Game Features
 
 - **13 HTML pages total** - interconnected story branches
