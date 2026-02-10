@@ -34,7 +34,7 @@ You are a fox born sick and alone in a desolate forest. At the brink of death, y
 
 ## Video of functionality
 
-[Texto del enlace](https://youtu.be/xOCQ-COYlhc)
+[La odisea del zorro :)](https://youtu.be/xOCQ-COYlhc)
 
 ## Game Features
 
