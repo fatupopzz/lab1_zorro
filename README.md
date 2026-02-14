@@ -158,7 +158,7 @@ Additional Requirements:
 
 ## Video Demo
 
-(Add link to video demonstration)
+[(Video lab 2)](https://youtu.be/Gp5VpOqT8iw)
 
 ---
 
