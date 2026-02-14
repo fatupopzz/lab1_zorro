@@ -1,0 +1,49 @@
+/* Reddit Retro Tema
+   Fatima Navarro - Lab 2
+   Sistemas y Tecnologías Web */
+/* fondo */
+body {
+    background: #fef5f7 !important;
+}
+/* header */
+header,
+shreddit-app-header {
+    background: #695b5b !important;
+}
+/* posts */
+shreddit-post,
+article {
+    background: #695b5b !important;
+    border-radius: 8px !important;
+}
+/* titulos */
+h1, h2, h3 {
+    color: white !important;
+}
+/* botones */
+button {
+    background: #86cecb !important;
+    color: #373b3e !important;
+    border: 1px solid #137a7f !important;
+}
+button:hover {
+    background: #137a7f !important;
+    color: white !important;
+}
+/* links */
+a {
+    color: white !important;
+}
+a:hover {
+    color: #e12885 !important;
+}
+/* sidebar */
+aside {
+    background: white !important;
+}
+/* comentarios */
+shreddit-comment {
+    background: white !important;
+    border-left: 3px solid #e12885 !important;
+}
+
