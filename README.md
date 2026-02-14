@@ -1,114 +1,168 @@
-# La Odisea del Zorro (The Fox's Odyssey)
+# Web Styling Lab
 
-An interactive "choose your own adventure" game following the journey of a rescued fox finding its place in the wild. Built with HTML.
+CSS customization project featuring a Reddit theme and a styled interactive story.
 
-## Story
+Author: Fatima Navarro  
+Course: Web Systems and Technologies  
+Universidad del Valle de Guatemala - 2026
 
-You are a fox born sick and alone in a desolate forest. At the brink of death, you were rescued by a wildlife caretaker who nursed you back to health. Now recovered, you face your first true choice: go into the unknown wilderness or stay safe. Every decision shapes your destiny.
+---
 
-## Project Structure
+## Project Overview
+
+This project consists of two parts:
+
+1. Reddit Custom Theme - A retro-styled theme using Stylus
+2. The Fox's Odyssey - CSS styling for an interactive choose-your-adventure story
+
+---
+
+## Part 1: Reddit Custom Theme
+
+### Description
+Custom CSS theme for Reddit with soft retro aesthetic and pastel colors.
+
+### Color Palette
+- Background: #fef5f7 (soft pink)
+- Header: #695b5b (brown)
+- Posts: #695b5b (brown with rounded corners)
+- Buttons: #86cecb (turquoise)
+- Accents: #e12885 (pink)
+
+### Installation
+
+1. Install Stylus browser extension
+2. Go to reddit.com
+3. Click Stylus icon and select "Write style for: reddit.com"
+4. Copy CSS from RedditStylus/style.css
+5. Save and refresh Reddit
+
+### Screenshots
+
+Before:
+<img width="1192" height="724" alt="image" src="https://github.com/user-attachments/assets/d06b3dec-9932-49f2-a870-e29d11fea435" />
+
+
+After:
+<img width="1192" height="724" alt="image" src="https://github.com/user-attachments/assets/7ad74ba8-fba2-4888-b14e-87543abbe3b1" />
+
+
+---
+
+## Part 2: The Fox's Odyssey
+
+### Description
+Interactive story with professional CSS styling including dynamic backgrounds, styled images, and game-like buttons.
+
+### Features
+
+Different background colors for each section:
+- Starting page: Forest green gradient
+- Chapter pages: Earthy brown gradient
+- Good ending: Golden gradient
+- Neutral ending: Blue-gray gradient
+- Bad ending: Dark red gradient
+
+Visual elements:
+- Images with borders and shadows
+- Game-style interactive buttons
+- Hover animations on links
+- Georgia serif typography
+
+### File Structure
 ```
 .
+├── RedditStylus/
+│   └── style.css
+├── css/
+│   └── styles.css
 ├── inicio/
-│   └── index.html          # Starting point of the game
+│   └── index.html
 ├── capitulos/
-│   ├── adentrarse_bosque.html
-│   ├── explorar_rio.html
-│   ├── seguir_cuervo.html
-│   ├── seguir_cuervo_profundo.html
-│   ├── investigar_huellas.html
-│   ├── retirarse_respetuoso.html
-│   ├── defender_posicion.html
-│   ├── rio_arriba.html
-│   ├── robar_carnada.html
-│   ├── huir_inmediato.html
-│   ├── buscar_alternativa.html
-│   ├── observar_comunidad.html
-│   └── explorar_colinas.html
+│   └── (13 chapter files)
 ├── finales/
-│   ├── final_bueno.html    # Good ending
-│   ├── final_neutro.html   # Neutral ending
-│   └── final_malo.html     # Bad ending
-└── imagenes/               # All game images
+│   ├── final_bueno.html
+│   ├── final_neutro.html
+│   └── final_malo.html
+├── imagenes/
+└── README.md
 ```
 
-## Video of functionality
+---
 
-[La odisea del zorro :)](https://youtu.be/xOCQ-COYlhc)
+## Running Locally
 
-## Game Features
-
-- **13 HTML pages total** - interconnected story branches
-- **Multiple decision points** - each page offers 2+ meaningful choices
-- **3 distinct endings:**
-  - **Good ending:** Find a community and thrive
-  - **Neutral ending:** Survive alone in modest safety  
-  - **Bad ending:** Lose your freedom
-
-## How to Play
-
-### Running Locally
-
-1. Clone this repository:
+### Option 1: Direct File Access
 ```bash
-   git clone https://github.com/fatupopzz/lab1_zorro.git
-   cd lab1_zorro
+git clone <repository-url>
+cd lab2-web-styling
+open inicio/index.html
 ```
 
-2. Open the starting page in your browser:
+### Option 2: NGINX Server
+
+1. Create directory:
 ```bash
-   open inicio/index.html
-   # or
-   xdg-open inicio/index.html
-```
-
-3. Make your choices by clicking the links
-
-### Running with NGINX
-
-1. Create directory in NGINX:
-```bash
-   sudo mkdir -p /var/www/html/odisea-del-zorro
+sudo mkdir -p /var/www/html/lab2
 ```
 
 2. Copy files:
 ```bash
-   sudo cp -r * /var/www/html/odisea-del-zorro/
+sudo cp -r * /var/www/html/lab2/
 ```
 
 3. Set permissions:
 ```bash
-   sudo chmod -R 755 /var/www/html/odisea-del-zorro
+sudo chmod -R 755 /var/www/html/lab2
 ```
 
 4. Access in browser:
 ```
-   http://localhost/odisea-del-zorro/inicio/
+http://localhost/lab2/inicio/
 ```
 
-## Game Paths
+---
 
-The story branches based on your choices:
-```
-START → Choose path → Make decisions → Reach one of 3 endings
+## Technologies Used
 
-Path 1: Deep Forest
-  → Follow crow or investigate tracks
-  → Trust and find community (GOOD)
-  → OR settle alone (NEUTRAL)
-  
-Path 2: River Exploration  
-  → Go upstream or avoid traps
-  → Escape danger (NEUTRAL)
-  → OR get trapped (BAD)
-```
+- HTML5
+- CSS3
+- NGINX (for deployment)
 
+---
 
-## Author
+## Requirements Met
 
-**Fatima Navarro**  
-Web Technologies Lab 1  
-Universidad del Valle de Guatemala, 2026
+Part 1 - Reddit Theme:
+- Custom CSS theme using Stylus
+- Saved in RedditStylus folder
+- Before/after screenshots in README
 
+Part 2 - Story Styling:
+- Consistent design throughout
+- Custom typography (Georgia serif)
+- Different background colors for inicio, capitulos, and finales
+- At least one animation (hover effect with translateX)
+- Images with borders and specific sizing
+- Game-style buttons (Skyrim/Fallout inspired)
+- Running from NGINX
 
+Additional Requirements:
+- Public Git repository with daily commits
+- No JavaScript used
+- CSS in separate folder, linked to HTML files
+- No inline CSS
+- English README with instructions
+
+---
+
+## Video Demo
+
+(Add link to video demonstration)
+
+---
+
+## License
+
+Universidad del Valle de Guatemala - Academic Project 2026
 
